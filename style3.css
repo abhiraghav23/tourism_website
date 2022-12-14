@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'josefin sans' , sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url(5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    background: rgba(0,0,0,0.2);
+    color: beige;
+    display: flex; justify-content: space-between;
+    align-items: center; text-transform: uppercase;
+}
+nav .logo{
+    width: 25%;  text-align: center;
+}
+nav .menu{
+    width: 40%;
+    display: flex; justify-content: space-around;
+    
+}
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+nav .menu a:first-child{
+    color: #00b894;
+    display: flex; justify-content: space-around;
+}
+
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+
+}
+section h3{
+      font-size: 35px; font-weight: 200; letter-spacing: 3px;
+      text-shadow: 1px 1px 2px black;
+
+}
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+section p{
+   font-size: 25px;
+   word-spacing: 2px;
+   margin-bottom: 25px;
+   text-shadow: 1px 1px 1px black;
+}
+
+section a{
+    padding: 12px 30px ;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px ;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+section .btnone{
+    background: white;
+    color: #000;
+
+}
+section .btntwo{
+       background: #00b894;
+       color: white;
+
+}
+.heading{
+    text-align: center;
+    padding: 2.5rem 0;
+}
+.heading span{
+    font-size: 35px;
+    background: rgb(98, 231, 220);
+    color: var(rgb(85, 213, 245));
+    border-radius: 2px;
+    padding: 4px 2px;
+
+}
+.heading span space{
+    font-size: 2.5rem;
+}
+
+
+
+.change_content::after{
+    content: '';
+    animation: animate 10s  linear infinite ;
+    color: #00b894;
+}
+@keyframes  animate{
+    0%{content:"AGRA";}
+    20%{content:"NEW DELHI";}
+    35%{content:"HARYANA";}
+    50%{content:"TAMILNADU";}
+    70%{content:"ASSAM";}
+    100%{content:"UTTRAKHAND";}
+
+}
+.features{
+    padding: 100px 0;
+}
+h1{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.feature-img{
+    width: auto;
+}
+.social{
+    position: fixed;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+}
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 0px;
+    background-color: #ffffff;
+    border: 1px solid #cbcbcb;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+
+}
+.social a:hover{
+    background-color: #000000;
+    transition:all ease 0.5s;
+
+}
+.social{
+    font-size: 20px;
+    color: #2b2b2b;
+}
+
+
+.footer{
+    background: #333;
+  }
+  
+  .footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+  }
+  
+  .footer .box-container .box{
+    padding:1rem 0;
+    flex:1 1 25rem;
+  }
+  
+  .footer .box-container .box h3{
+    font-size: 2.5rem;
+    padding:.7rem 0;
+    color:#fff;
+  }
+  
+  .footer .box-container .box p{
+    font-size: 1.5rem;
+    padding:.7rem 0;
+    color:#eee;
+  }
+  
+  .footer .box-container .box a{
+    display: block;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    color:#eee;
+  }
+  
+  .footer .box-container .box a:hover{
+    color:var(--orange);
+    text-decoration: underline;
+  }
+  
+  .footer .credit{
+    text-align: center;
+    padding:1rem .5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: normal;
+    color:#fff;
+    border-top: .1rem solid rgba(255,255,255,.2);
+  }
+  
+  .footer .credit span{
+    color:var(orange);
+  }
+ 
